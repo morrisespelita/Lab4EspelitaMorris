@@ -4,19 +4,19 @@ public class Companies {
     private String companyName,companyCountry,companyCEO,companyIndustry, companyDescription;
     private int logo;
 
-    public Companies(int logo, String compName, String compCountry, String compCEO, String compIndustry, String compDescription){
+    public Companies(int logo, String companyName, String companyCountry, String companyCEO, String companyIndustry, String companyDescription){
         this.logo = logo;
-        this.companyName = compName;
-        this.companyCountry = compCountry;
-        this.companyCEO = compCEO;
-        this.companyIndustry = compIndustry;
-        this.companyDescription = compDescription;
+        this.companyName = companyName;
+        this.companyCountry = companyCountry;
+        this.companyCEO = companyCEO;
+        this.companyIndustry = companyIndustry;
+        this.companyDescription = companyDescription;
     }
 
     public int getLogo() {return logo;}
-    public String getCompName() {return companyName;}
-    public String getCompCountry() {return companyCountry;}
-    public String getCompCEO() {return companyCEO;}
-    public String getCompIndustry() {return  companyIndustry;}
-    public String getCompDescription() {return companyDescription;}
+    public String getCompanyName() {return companyName;}
+    public String getCompanyCountry() {return companyCountry;}
+    public String getCompanyCEO() {return companyCEO;}
+    public String getCompanyIndustry() {return  companyIndustry;}
+    public String getCompanyDescription() {return companyDescription;}
 }

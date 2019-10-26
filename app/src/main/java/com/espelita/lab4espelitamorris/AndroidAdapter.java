@@ -33,24 +33,24 @@ public class AndroidAdapter extends ArrayAdapter<Companies> {
     @Override
     public View getView(int i, @Nullable View convertView, @NonNull ViewGroup parent){
         int logo = getItem(i).getLogo();
-        String cName = getItem(i).getCompName();
-        String cCountry = getItem(i).getCompCountry();
-        String cCEO = getItem(i).getCompCEO();
-        String cIndustry = getItem(i).getCompIndustry();
+        String cName = getItem(i).getCompanyName();
+        String cCountry = getItem(i).getCompanyCountry();
+        String cCEO = getItem(i).getCompanyCEO();
+        String cIndustry = getItem(i).getCompanyIndustry();
 
         LayoutInflater inflater = LayoutInflater.from(context);
         convertView = inflater.inflate(resource, parent, false);
         ImageView img = convertView.findViewById(R.id.ivLogo);
-        TextView compName = convertView.findViewById(R.id.tvName);
-        TextView compCountry = convertView.findViewById(R.id.tvCountry);
-        TextView compCEO = convertView.findViewById(R.id.tvCEO);
-        TextView compIndustry = convertView.findViewById(R.id.tvIndustry);
+        TextView companyName = convertView.findViewById(R.id.tvName);
+        TextView companyCountry = convertView.findViewById(R.id.tvCountry);
+        TextView companyCEO = convertView.findViewById(R.id.tvCEO);
+        TextView companyIndustry = convertView.findViewById(R.id.tvIndustry);
 
         img.setImageResource(logo);
-        compName.setText(cName);
-        compCountry.setText(cCountry);
-        compIndustry.setText(cIndustry);
-        compCEO.setText(cCEO);
+        companyName.setText(cName);
+        companyCountry.setText("Country: " + cCountry);
+        companyIndustry.setText("Industry: " + cIndustry);
+        companyCEO.setText("CEO: " + cCEO);
 
         return convertView;
     }
